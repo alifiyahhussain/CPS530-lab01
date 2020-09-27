@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<!--password protecting the webpage-->
+        <script>
+            var pass; 
+            var correctpass="alyfire"
+            pass=prompt('Enter Password:', '');
+            if (pass==correctpass) {
+                alert('Correct Password, Click OK to Enter');
+            } else {
+                window.location="http://www.neopets.com/index.phtml";
+            }
+        </script>
+	<title>LAB01 CPS530</title>
+	<meta charset="UTF-8">
+	<style>
+		body{
+			background-color: pink;
+		}
+		nav{
+			text-align: center;
+		}
+		nav p {
+			text-align: center;
+			font-size: 16px;
+			color: black;
+			font-family:Georgia; 
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		nav ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+
+		}
+		nav li a {
+		    display: block;
+		    text-decoration: none;
+		    text-align: center;
+		    padding: 14px 16px;
+		    line-height: 0.15em;
+		    color:#1e5799;
+		    border-right: 1px solid white;
+		}
+		nav li {
+  			float: left;
+		}
+		nav li a:hover {
+		  background-color: lavender;
+		}
+		nav li a p:hover {
+		 color: gray;
+		}
+		h2{color: white;
+			font-family: Georgia;
+			font-size: 12px;
+			color: white;
+		}
+		h1{	font-family:helvetica;
+			font-size: 52px;
+			color: #B7F9F2;
+			text-align: center;
+		}
+		p{color: green;}
+		.row {
+		  display: flex;
+		  flex-wrap: wrap;
+		  padding: 0 4px;
+		}
+
+		/* Create four equal columns that sits next to each other */
+		.column {
+		  flex: 50%;
+		  max-width: 25%;
+		  padding: 0 4px;
+		}
+
+		.column img {
+		  margin-top: 8px;
+		  vertical-align: middle;
+		  width: 100%;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media screen and (max-width: 800px) {
+		  .column {
+		    flex: 50%;
+		    max-width: 50%;
+		  }
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .column {
+		    flex: 100%;
+		    max-width: 100%;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<h1>ALIFIYAH HUSSAIN</h1>
+	<nav>
+		<ul>
+		  <li><a href="index.html"><p><i>Home</i></p></a></li>
+		  <li><a href="news.asp"><p><i>Photography</i></p></a></li>
+		  <li><a href="contact.asp"><p><i>Graphic Stuff</i></p></a></li>
+		  <li><a href="about.asp"><p><i>Flowers</i></p></a></li>
+		  <li><a href="about.asp"><p><i>Store</i></p></a></li>
+		</ul>
+	</nav>
+	<h2 style="text-align: center">random things that you don't really need, but should definitely purchase</h2>
+	<div class="row">
+	  <div class="column">
+	    <img src="./images/und.png" alt="Green">
+	    <img src="./images/store6.png" alt="Green">
+	    <img src="./images/store7.png" alt="Green">
+	  </div>
+	  <div class="column">
+	    <img src="./images/store8.png" alt="Green">
+	    <img src="./images/store9.png" alt="Green">
+	    <img src="./images/store5.png" alt="Green">
+	  </div>
+	  <div class="column">
+	    <img src="./images/store4.png" alt="Green">
+	    <img src="./images/store3!.png" alt="Green">
+	    <img src="./images/store10.png" alt="Green">
+	  </div>
+	</div>
+	<p class="studentnum">Student Number: 500778471</p>
+    <h4>The links to my validation and technical reports:</h4>
+    <ol>
+    	<li><a href="./validation.html">Validation Report</a></li>
+    	<li><a href="./technical.html">Technical Report</a></li>
+    </ol>
+</body>
